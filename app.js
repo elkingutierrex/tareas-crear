@@ -19,11 +19,11 @@ const main = async() =>{
         switch (opt ) {
             case '1':
                 // crear opción
-                const desc = await leerInput( 'Descripcion: ' )
+                const desc = await leerInput( 'Descripcion:' )
                 tareas.crearTarea( desc )
                 break;
             case '2':
-                console.log( tareas._listado );
+                console.log( tareas.listadoArr );
                 break;
         
             default:
