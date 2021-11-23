@@ -3,6 +3,7 @@
  *  { 'uuid-54545-5245454-2' _ { id: 12, desc asd, completadoEn: 92231 }, ... }
  */
 
+
 const  Tarea = require('./tarea')
 
 class Tareas{
@@ -25,8 +26,8 @@ class Tareas{
     }
 
     borrarTarea( id = '' ) {
-        if( this._listado[id]){
-            delete this._listado.id;
+        if( this._listado[id] ){
+            delete this._listado[id];
         }
     }
 
@@ -34,7 +35,6 @@ class Tareas{
         tareas.forEach( tarea => {
             this._listado[tarea.id] = tarea;
         })
-
     }
 
     crearTarea( desc = '' ){
